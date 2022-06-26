@@ -119,6 +119,10 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    cursor: pointer;
+}
+.portfolio .link{
+    text-decoration: none;
 }
 .filtr-btn:hover,
 .filtr-btn:focus{
@@ -127,11 +131,10 @@ body{
 }
 .portfolio .portfolio-title{
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
 }
 .portfolio .portfolio-discr{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
 }
-

@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --text-color-white: #ffffff;
     --backgraund-color-grey: #F5F4FA;
+    --backgraund-color-dark: #2F303A;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -17,6 +18,7 @@ body{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
+    letter-spacing: 0.02em;
     line-height: 1.19;
     color: var(--accent-color);
     text-decoration: none;
@@ -37,17 +39,15 @@ body{
 .header{
     font-weight: 500;
     line-height: 1.14;
-    color: var(--primary-text-color);
 }
-.site-nav .link{
-    letter-spacing: 0.02em;
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+.site-nav{
     color: var(--title-text-color);
 }
 .site-nav .current{
-    color: var(--accent-color);
-}
-.link:hover,
-.link:focus{
     color: var(--accent-color);
 }
 .title{
@@ -55,6 +55,9 @@ body{
     color: var(--title-text-color);
 }
 /* Герой */
+.hero{
+    background-color: var(--backgraund-color-dark);
+}
 .hero-title{
     font-weight: 900;
     font-size: 44px;
@@ -64,10 +67,11 @@ body{
     text-transform: uppercase;
     color: var(--text-color-white);
 }
-.button{
+.hero-btn{
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,87;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     background-color: var(--accent-color);
     color: var(--text-color-white);
@@ -82,9 +86,10 @@ body{
     text-transform: uppercase;
 }
 /* Чем мы занимаемся */
-.section .title {
+.section-title {
     font-size: 36px;
     line-height: 1.16;
+    color: var(--title-text-color);
     text-align: center;
 }
 /* Наша команда */
@@ -102,6 +107,9 @@ body{
     line-height: 1.18;
 }
 /* Footer */
+.footer{
+    background-color: var(--backgraund-color-dark);
+}
 .address{
     font-style: inherit;
     color: rgba(255, 255, 255, 0.6);
@@ -109,10 +117,9 @@ body{
 .address-descr{
     color: var(--text-color-white);
 }
-
-
 /* Портфоліо */
 .filtr-btn{
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -120,9 +127,6 @@ body{
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     cursor: pointer;
-}
-.portfolio .link{
-    text-decoration: none;
 }
 .filtr-btn:hover,
 .filtr-btn:focus{
